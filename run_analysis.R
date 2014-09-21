@@ -1,6 +1,7 @@
 
 
-#setwd("C://DISCO_D//ORGANIZADO//Coursera//__Coursera//08_Data Science Specialization//03_Getting and Cleaning Data//Project//solution")
+#
+setwd("C://DISCO_D//ORGANIZADO//Coursera//__Coursera//08_Data Science Specialization//03_Getting and Cleaning Data//Project//solution")
 
 ## Get Data
 
@@ -79,23 +80,15 @@ d = ddply(tt_sitting  ,.(subject), numcolwise(mean))
 e = ddply(tt_standing ,.(subject), numcolwise(mean))
 f = ddply(tt_laying   ,.(subject), numcolwise(mean))
 
-
-colnames(a) = paste(colnames(a), "walking_upstairs", sep="_")
-colnames(b) = paste(colnames(b), "walking_downstairs", sep="_")
-colnames(c) = paste(colnames(c), "walking", sep="_")
-colnames(d) = paste(colnames(d), "sitting", sep="_")
-colnames(e) = paste(colnames(e), "standing", sep="_")
-colnames(f) = paste(colnames(f), "laying", sep="_")
-
-colnames(a)[1] = "subject"
-b$subject_walking_downstairs = NULL
-c$subject_walking = NULL
-d$subject_sitting = NULL
-e$subject_standing = NULL
-f$subject_laying = NULL
-
-
-abcdef = cbind(a,b,c,d,e,f)
+a$activity = "WALKING_UPSTAIRS"
+b$activity = "WALKING_DOWNSTAIRS"
+c$activity = "WALKING"
+d$activity = "SITTING"
+e$activity = "STANDING"
+f$activity = "LAYING"
+  
+  
+abcdef = rbind(a,b,c,d,e,f)
 
 setwd("..\\..")
 
