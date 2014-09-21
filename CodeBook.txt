@@ -1,0 +1,74 @@
+
+Codebook for Getting and Cleaning Data Project.
+dataset, mydata.txt
+
+Variable name: Type: Valid Values: Description
+
+$ subject                 : int  : [1:30]  : Subject observed
+$ tBodyAcc-mean-X         : num  : [-1, 1] : Time Domain, mean, Linear Body Acceleration, X axis
+$ tBodyAcc-mean-Y         : num  : [-1, 1] : Time Domain, mean, Linear Body Acceleration, Y axis
+$ tBodyAcc-mean-Z         : num  : [-1, 1] : Time Domain, mean, Linear Body Acceleration, Z axis
+$ tBodyAcc-std-X          : num  : [-1, 1] : Time Domain, std,  Linear Body Acceleration, X axis
+$ tBodyAcc-std-Y          : num  : [-1, 1] : Time Domain, std,  Linear Body Acceleration, Y axis
+$ tBodyAcc-std-Z          : num  : [-1, 1] : Time Domain, std,  Linear Body Acceleration, Z axis
+$ tGravityAcc-mean-X      : num  : [-1, 1] : Time Domain, mean, Gravity Acceleration, X axis
+$ tGravityAcc-mean-Y      : num  : [-1, 1] : Time Domain, mean, Gravity Acceleration, Y axis
+$ tGravityAcc-mean-Z      : num  : [-1, 1] : Time Domain, mean, Gravity Acceleration, Z axis
+$ tGravityAcc-std-X       : num  : [-1, 1] : Time Domain, std,  Gravity Acceleration, X axis
+$ tGravityAcc-std-Y       : num  : [-1, 1] : Time Domain, std,  Gravity Acceleration, Y axis
+$ tGravityAcc-std-Z       : num  : [-1, 1] : Time Domain, std,  Gravity Acceleration, Z axis
+$ tBodyAccJerk-mean-X     : num  : [-1, 1] : Time Domain, mean, Body Acceleration with Jerk Signal, X axis
+$ tBodyAccJerk-mean-Y     : num  : [-1, 1] : Time Domain, mean, Body Acceleration with Jerk Signal, Y axis
+$ tBodyAccJerk-mean-Z     : num  : [-1, 1] : Time Domain, mean, Body Acceleration with Jerk Signal, Z axis
+$ tBodyAccJerk-std-X      : num  : [-1, 1] : Time Domain, std,  Body Acceleration with Jerk Signal, X axis
+$ tBodyAccJerk-std-Y      : num  : [-1, 1] : Time Domain, std,  Body Acceleration with Jerk Signal, Y axis
+$ tBodyAccJerk-std-Z      : num  : [-1, 1] : Time Domain, std,  Body Acceleration with Jerk Signal, Z axis
+$ tBodyGyro-mean-X        : num  : [-1, 1] : Time Domain, mean, Body Gyroscope, X axis
+$ tBodyGyro-mean-Y        : num  : [-1, 1] : Time Domain, mean, Body Gyroscope, Y axis
+$ tBodyGyro-mean-Z        : num  : [-1, 1] : Time Domain, mean, Body Gyroscope, Y axis
+$ tBodyGyro-std-X         : num  : [-1, 1] : Time Domain, std,  Body Gyroscope, X axis
+$ tBodyGyro-std-Y         : num  : [-1, 1] : Time Domain, std,  Body Gyroscope, Y axis
+$ tBodyGyro-std-Z         : num  : [-1, 1] : Time Domain, std,  Body Gyroscope, Z axis
+$ tBodyGyroJerk-mean-X    : num  : [-1, 1] : Time Domain, mean, Body Gyroscope with Jerk Signal, X axis
+$ tBodyGyroJerk-mean-Y    : num  : [-1, 1] : Time Domain, mean, Body Gyroscope with Jerk Signal, Y axis
+$ tBodyGyroJerk-mean-Z    : num  : [-1, 1] : Time Domain, mean, Body Gyroscope with Jerk Signal, Z axis
+$ tBodyGyroJerk-std-X     : num  : [-1, 1] : Time Domain, std,  Body Gyroscope with Jerk Signal, X axis
+$ tBodyGyroJerk-std-Y     : num  : [-1, 1] : Time Domain, std,  Body Gyroscope with Jerk Signal, Y axis
+$ tBodyGyroJerk-std-Z     : num  : [-1, 1] : Time Domain, std,  Body Gyroscope with Jerk Signal, Z axis
+$ tBodyAccMag-mean        : num  : [-1, 1] : Time Domain, mean, Linear Body Acceleration, Magnitue
+$ tBodyAccMag-std         : num  : [-1, 1] : Time Domain, std,  Linear Body Acceleration, Magnitue
+$ tGravityAccMag-mean     : num  : [-1, 1] : Time Domain, mean, Gravity Acceleration, Magnitude
+$ tGravityAccMag-std      : num  : [-1, 1] : Time Domain, std,  Gravity Acceleration, Magnitude
+$ tBodyAccJerkMag-mean    : num  : [-1, 1] : Time Domain, mean, Body Acceleration with Jerk Signal, Magnitude
+$ tBodyAccJerkMag-std     : num  : [-1, 1] : Time Domain, std,  Body Acceleration with Jerk Signal, Magnitude
+$ tBodyGyroMag-mean       : num  : [-1, 1] : Time Domain, mean, Body Gyroscope, Magnitude
+$ tBodyGyroMag-std        : num  : [-1, 1] : Time Domain, std,  Body Gyroscope, Magnitude
+$ tBodyGyroJerkMag-mean   : num  : [-1, 1] : Time Domain, mean, Body Gyroscope with Jerk Signal, Magnitude
+$ tBodyGyroJerkMag-std    : num  : [-1, 1] : Time Domain, std,  Body Gyroscope with Jerk Signal, Magnitude
+$ fBodyAcc-mean-X         : num  : [-1, 1] : Frequency Domain, mean, Fast Fourier Transform (FFT) Linear Body Acceleration, X axis
+$ fBodyAcc-mean-Y         : num  : [-1, 1] : Frequency Domain, mean, Fast Fourier Transform (FFT) Linear Body Acceleration, Y axis
+$ fBodyAcc-mean-Z         : num  : [-1, 1] : Frequency Domain, mean, Fast Fourier Transform (FFT) Linear Body Acceleration, Z axis
+$ fBodyAcc-std-X          : num  : [-1, 1] : Frequency Domain, std,  Fast Fourier Transform (FFT) Linear Body Acceleration, X axis
+$ fBodyAcc-std-Y          : num  : [-1, 1] : Frequency Domain, std,  Fast Fourier Transform (FFT) Linear Body Acceleration, Y axis
+$ fBodyAcc-std-Z          : num  : [-1, 1] : Frequency Domain, std,  Fast Fourier Transform (FFT) Linear Body Acceleration, Z axis
+$ fBodyAccJerk-mean-X     : num  : [-1, 1] : Frequency Domain, mean, FFT Linear Body Acceleration with Jerk Signal, X axis
+$ fBodyAccJerk-mean-Y     : num  : [-1, 1] : Frequency Domain, mean, FFT Linear Body Acceleration with Jerk Signal, Y axis
+$ fBodyAccJerk-mean-Z     : num  : [-1, 1] : Frequency Domain, mean, FFT Linear Body Acceleration with Jerk Signal, Z axis
+$ fBodyAccJerk-std-X      : num  : [-1, 1] : Frequency Domain, std,  FFT Linear Body Acceleration with Jerk Signal, X axis
+$ fBodyAccJerk-std-Y      : num  : [-1, 1] : Frequency Domain, std,  FFT Linear Body Acceleration with Jerk Signal, Y axis
+$ fBodyAccJerk-std-Z      : num  : [-1, 1] : Frequency Domain, std,  FFT Linear Body Acceleration with Jerk Signal, Z axis
+$ fBodyGyro-mean-X        : num  : [-1, 1] : Frequency Domain, mean, FFT Body Gyroscope, X axis
+$ fBodyGyro-mean-Y        : num  : [-1, 1] : Frequency Domain, mean, FFT Body Gyroscope, Y axis
+$ fBodyGyro-mean-Z        : num  : [-1, 1] : Frequency Domain, mean, FFT Body Gyroscope, Z axis
+$ fBodyGyro-std-X         : num  : [-1, 1] : Frequency Domain, std,  FFT Body Gyroscope, X axis
+$ fBodyGyro-std-Y         : num  : [-1, 1] : Frequency Domain, std,  FFT Body Gyroscope, Y axis
+$ fBodyGyro-std-Z         : num  : [-1, 1] : Frequency Domain, std,  FFT Body Gyroscope, Z axis
+$ fBodyAccMag-mean        : num  : [-1, 1] : Frequency Domain, mean, Fast Fourier Transform (FFT) Linear Body Acceleration, Magnitude
+$ fBodyAccMag-std         : num  : [-1, 1] : Frequency Domain, std,  Fast Fourier Transform (FFT) Linear Body Acceleration, Magnitude
+$ fBodyBodyAccJerkMag-mean : num : [-1, 1] : Frequency Domain, mean, FFT Linear Body Acceleration with Jerk Signal, Magnitude
+$ fBodyBodyAccJerkMag-std : num  : [-1, 1] : Frequency Domain, std,  FFT Linear Body Acceleration with Jerk Signal, Magnitude
+$ fBodyBodyGyroMag-mean   : num  : [-1, 1] : Frequency Domain, mean,  FFT Body Gyroscope, Magnitude
+$ fBodyBodyGyroMag-std    : num  : [-1, 1] : Frequency Domain, std,  FFT Body Gyroscope, Magnitude
+$ fBodyBodyGyroJerkMag-mean : num  : [-1, 1] : Frequency Domain, mean,   FFT Body Gyroscope with Jerk Signal, Magnitude
+$ fBodyBodyGyroJerkMag-std: num  : [-1, 1] : Frequency Domain, std,   FFT Body Gyroscope with Jerk Signal, Magnitude
+$ activity                : chr  : "WALKING_UPSTAIRS" "WALKING_DOWNSTAIRS" "WALKING" "SITTING" "LAYING" "STANDING" : Activity performed by subject
