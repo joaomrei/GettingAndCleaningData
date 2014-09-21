@@ -33,7 +33,7 @@ traintest = rbind(train, test)
 
 Subsets merged dataset to choose variables names  with "mean and "std" but not "meanF"
 
-traintest2 = traintest[, c(grep("mean[^F]|std", colnames(traintest)))]
+traintest2 = traintest[, c(grep("mean$|std$|mean-|std-", colnames(traintest)))]
 
 # (5) From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
