@@ -1,7 +1,6 @@
 
 
-#
-setwd("C://DISCO_D//ORGANIZADO//Coursera//__Coursera//08_Data Science Specialization//03_Getting and Cleaning Data//Project//solution")
+#setwd("C://DISCO_D//ORGANIZADO//Coursera//__Coursera//08_Data Science Specialization//03_Getting and Cleaning Data//Project//solution")
 
 ## Get Data
 
