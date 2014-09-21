@@ -31,7 +31,7 @@ traintest = rbind(train, test)
 
 # (2) Extracts only the measurements on the mean and standard deviation for each measurement. 
 
-Subsets merget dataset to choose variables names  with "mean and "std" but not "meanF"
+Subsets merged dataset to choose variables names  with "mean and "std" but not "meanF"
 
 traintest2 = traintest[, c(grep("mean[^F]|std", colnames(traintest)))]
 
@@ -44,7 +44,7 @@ tt_walking_u = subset(traintest2, traintest2$activity=="WALKING_UPSTAIRS")
 
 we get 6 new dataframes
 
-for every dataframe we calculate the mean of every numeric variable (using plyr package):
+for every dataframe we calculate the mean of every numeric variable grouped by subject (using plyr package):
 e.g.
 
 a = ddply(tt_walking_u,.(subject), numcolwise(mean))
