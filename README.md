@@ -5,18 +5,20 @@ Coursera Data Science Specialization Project - Getting and Cleaning Data
 
 file: run_analysis.R
 
-This script runs on Windows only beacause it uses setwd to navigate in Windows folder structure
+This script runs on Windows only because it uses setwd to navigate in Windows folder structure
 One alternative is to manually place every data file in the same dir. This way there is no need to use setwd.
 I opted to do it automatically but on windows.
 
 
 It begins by downloading the original dataset in zip format and unzip.
-Next it loads train and test dataset, subject, activity and features data
+Next it loads train and test dataset, subject, activity and features data.
 
 # (4) Appropriately labels the data set with descriptive variable names.
 
-Builds subject and activity variables and names all variable names (colnames())
+Builds subject and activity variables and names all variable names (colnames()) in train and test dataframes
+The following line removes "()" from variable names.
 
+features$V2 = sub("\\(\\)","", features$V2)
 
 # (3) Uses descriptive activity names to name the activities in the data set
 
