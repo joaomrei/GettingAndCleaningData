@@ -55,7 +55,7 @@ Next we row bind the 6 dataframes and get the final one:
 
 abcdef = rbind(a,b,c,d,e,f)
 
-The final 'data.frame':	180 obs. of  59 variables
+The final 'data.frame':	180 obs. of  68 variables:
 
 
 

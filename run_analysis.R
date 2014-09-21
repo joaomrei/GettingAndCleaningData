@@ -57,7 +57,7 @@ traintest = rbind(train, test)
 
 # (2) Extracts only the measurements on the mean and standard deviation for each measurement. 
 
-traintest2 = traintest[, c(grep("mean[^F]|std", colnames(traintest)))]
+traintest2 = traintest[, c(grep("mean$|std$|mean-|std-", colnames(traintest)))]
 traintest2$subject = traintest$subject
 traintest2$activity = traintest$activity
 
